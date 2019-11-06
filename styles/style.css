@@ -214,11 +214,14 @@ img {
   background-size: cover;
   background-position: 100%;
   background-repeat: no-repeat;
-  height: 120vh;
-  padding: 5vh 10vw 0 0;
+  padding: 5vh 10vw 5vh 0;
+}
+.ba-footer-wrapp {
+  display: flex;
+  justify-content: flex-end;
 }
 .ba-contact {
-  float: right;
+  /* float: right; */
   width: 100%;
   max-width: 500px;
 }
