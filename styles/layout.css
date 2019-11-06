@@ -1,11 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-body {
-  height: 200VH;
-} 
+
 .container {
-  max-width: 1170px;
+  max-width: 1500px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
@@ -55,9 +50,4 @@ body {
 .ba-col-1 {
   width: 8.3333%;
 }
-[class^='ba-col-'] {
-  padding: 0 15px;
-}
-.ba-row-test {
-  width: 50%;
-}
+
