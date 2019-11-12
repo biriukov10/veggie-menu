@@ -36,7 +36,7 @@ h3::after {
 }
 img {
   height: 100%;
-  width: 100%;
+  max-width: 100%;
 }
 /* start header */
 .ba-header {
@@ -45,12 +45,12 @@ img {
   background-image: url(../images/logo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 52px 7vw 0 0;
 }
 .ba-header-menu {
   display: flex;
   align-items: flex-end;
   flex-direction: column;  
+  padding: 52px 7vw 0 0;
 }
 .ba-nav {
   width: 100%;
@@ -109,12 +109,25 @@ img {
 }
 /* section specials */
 .ba-specials {
-  padding: 5vh 10vw 10vh;
+  padding: 5vw 0;
+}
+.ba-specials [class^='ba-col-'] {
+  padding: 0;
 }
 .ba-card {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   background-color: #ebebeb;
   height: 100%;
+}
+.ba-card-desc {
+  width: 100%;
+  max-width: 248px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
   padding: 6vh .6vw 4.6vh;
 }
 .ba-card__title {
@@ -125,6 +138,7 @@ img {
   font-weight: 300;
   line-height: 23px;
   margin-bottom: 1vh;
+  text-align: center;
 }
 .ba-card__text__price {
   font-size: 1.125rem;
@@ -152,14 +166,15 @@ img {
   display: flex;
   justify-content: flex-end;
 }
+.ba-image img {
+  width: 100%;
+}
 .ba-info-image__item {
   /* margin-left: 15vw; */
   width: 215px;
   height: 147px;
 }
-.ba-image__item {
-  /* box-shadow: 0px 0px 31px 10px rgba(153,154,154,1); */
-}
+
 /* section menu */
 .ba-menu-section {
   padding: 6vh 10vw 10vh;
@@ -226,7 +241,7 @@ img {
   background-size: cover;
   background-position: 100%;
   background-repeat: no-repeat;
-  padding: 5vh 10vw 5vh 0;
+  /* padding: 5vh 10vw 5vh 0; */
 }
 .ba-footer-wrapp {
   display: flex;
@@ -235,6 +250,7 @@ img {
 .ba-contact {
   width: 100%;
   max-width: 500px;
+  margin: 5vh 11vw 0 0;
 }
 .ba-contact-wrapp {
   display: flex;

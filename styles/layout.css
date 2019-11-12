@@ -50,4 +50,6 @@
 .ba-col-1 {
   width: 8.3333%;
 }
-
+[class^='ba-col-'] {
+  padding: 0 15px;
+}
